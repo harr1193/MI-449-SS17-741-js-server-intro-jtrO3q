@@ -5,7 +5,7 @@ var http = require('http')
 var server = http.createServer(function (request, response) {
   if (request.url === '/') {
     response.end(
-      '<h1>Welcome!</h1>' +
+      '<h1>Welcome to this site!</h1>' +
       '<a href="/cuteness">' + '<h2>Cute Animals</h2>' + '</a>' +
       '<a href="/random-joke">' + '<h2>Random Joke</h2>' + '</a>')
   } else if (request.url === '/random-joke') {
